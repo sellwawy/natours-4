@@ -1,0 +1,35 @@
+// COLORS
+:root {
+   --color-opacity: 1;
+   --color-primary: 140 49% 55%;
+   --color-primary-light: 111 55% 64%;
+   --color-primary-dark: 160 64% 43%;
+
+   --color-secondary-light: 44 100% 50%;
+   --color-secondary-dark: 21 100% 59%;
+
+   --color-tertiary-light: 209 100% 58%;
+   --color-tertiary-dark: 246 95% 62%;
+
+   --color-grey-light-1: 0 0% 97%;
+   --color-grey-light-2: 0 0% 93%;
+
+   --color-grey-dark: 0 0% 47%;
+
+   --color-grey-dark-2: 0 0% 60%;
+   --color-grey-dark-3: 0 0% 20%;
+   --color-gray-blue: 216 20% 95%;
+
+   --color-white: 0 0% 100%;
+   --color-black: 0 0% 0%;
+
+   // FONT
+   $default-font-size: 1.6rem;
+
+   // GRID
+   $grid-width: 114rem;
+   $gutter-vertical: 8rem;
+   $gutter-vertical-small: 6rem;
+   $gutter-horizontal: 6rem;
+}
+$color-black: #000;

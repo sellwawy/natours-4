@@ -1,0 +1,7 @@
+// @use 'sass:math';
+
+/// Converts PX to REM
+@function rem($size) {
+   $remSize: calc($size / 16px) * 1rem;
+   @return $remSize;
+}

@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- SEO -->
+      <title>Natours</title>
+      <meta
+         name="description"
+         content="Simple editor to create and publish social media posts" />
+
+      <!-- Fonts -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer" />
+
+      <style>
+         @font-face {
+            font-family: 'Inter';
+            src: url('./assets/fonts/inter/Inter-VariableFont_slnt\,wght-subset.woff2')
+               format('woff2');
+            font-weight: 100 900;
+            /* font-display: swap; */
+         }
+      </style>
+      <script type="module" src="main.js"></script>
+   </head>
+
+   <body class="app">
+      <!--  Header  -->
+      <header class="site-header">
+         <div class="container site-header__con">
+            <!-- Logo -->
+            <div class="site-logo">
+               <!-- <a href="/">
+                  <img
+                     class="site-logo__img"
+                     src="./assets/img/logo-white.png"
+                     alt="Site logo" />
+               </a> -->
+               <h1>Natours</h1>
+            </div>
+
+            <button
+               class="site-nav-toggle bars-icon"
+               aria-controls="primary-navigation"
+               aria-expanded="false">
+               <span class="sr-only">Menu</span>
+            </button>
+
+            <!-- Navbar -->
+            <nav class="">
+               <ul
+                  role="list"
+                  id="primary-navigation"
+                  class="site-nav flex"
+                  data-visible="false"
+                  aria-label="Main">
+                  <li class="site-nav__li">
+                     <a href="#home" class="site-nav__a">Home</a>
+                  </li>
+                  <li class="site-nav__li">
+                     <a href="#about" class="site-nav__a">About</a>
+                  </li>
+                  <li class="site-nav__li">
+                     <a href="#resume" class="site-nav__a">Resume</a>
+                  </li>
+                  <li class="site-nav__li">
+                     <a href="#portfolio" class="site-nav__a">Portfolio</a>
+                  </li>
+                  <li class="site-nav__li">
+                     <a href="#blog" class="site-nav__a">Blog</a>
+                  </li>
+                  <li class="site-nav__li">
+                     <a href="#contact" class="site-nav__a">Contact</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <main>
+         <!-- Hero Section -->
+         <div class="homepage-hero">
+            <div class="container homepage-hero__con">
+               <h1 class="primary-heading">
+                  <span class="primary-heading__main">Outdoors</span>
+                  <span class="primary-heading__sub">
+                     is where life happens
+                  </span>
+               </h1>
+               <a href="javascript:;" class="btn btn--green btn--animated">
+                  Discover our tours
+               </a>
+            </div>
+         </div>
+         <!-- End Hero Section -->
+
+         <!-- About Section -->
+         <section class="about-section slice">
+            <div class="container">
+               <h2 class="secondary-heading">
+                  Exciting tours for adventurous people
+               </h2>
+               <div class="about-section__con">
+                  <div>
+                     <h3 class="tertiary-heading">
+                        You're going to fall in love with nature
+                     </h3>
+                     <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aperiam, ipsum sapiente aspernatur libero repellat quis
+                        consequatur ducimus quam nisi exercitationem omnis earum
+                        qui.
+                     </p>
+                     <h3 class="tertiary-heading">
+                        Live adventures like you never have before
+                     </h3>
+                     <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aperiam, ipsum sapiente aspernatur libero repellat quis
+                        consequatur.
+                     </p>
+                     <a href="javascript:;" class="btn-text">
+                        Learn more &rarr;
+                     </a>
+                  </div>
+                  <div class="composition">
+                     <img
+                        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Photo 1"
+                        class="composition__photo composition__photo--p1" />
+                     <img
+                        src="https://images.unsplash.com/photo-1501696088263-5696c92364bf?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Photo 2"
+                        class="composition__photo composition__photo--p2" />
+                     <img
+                        src="https://images.unsplash.com/photo-1547626740-02cb6aed9ef8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Photo 3"
+                        class="composition__photo composition__photo--p3" />
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End About Section -->
+
+         <!-- Features Section -->
+         <section class="features-section slice">
+            <div class="container">
+               <h2 class="secondary-heading secondary-heading--white">
+                  Our features
+               </h2>
+               <div class="features-section__con">
+                  <div class="feature-box">
+                     <i class="fa-solid fa-globe feature-box__icon"></i>
+                     <h3 class="tertiary-heading">Explore the world</h3>
+                     <p class="feature-box__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deserunt quasi nobis fuga et vitae natus, voluptatum
+                        provident repellat rem!
+                     </p>
+                  </div>
+                  <div class="feature-box">
+                     <i class="fa-regular fa-compass feature-box__icon"></i>
+                     <h3 class="tertiary-heading">Meet nature</h3>
+                     <p class="feature-box__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Molestiae sint porro eaque debitis libero
+                        corporis. Nemo quam alias repudiandae.
+                     </p>
+                  </div>
+                  <div class="feature-box">
+                     <i class="fa-regular fa-map feature-box__icon"></i>
+                     <h3 class="tertiary-heading">Find your way</h3>
+                     <p class="feature-box__text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Reprehenderit dolores aperiam sequi ipsum sapiente
+                        autem, ea natus distinctio commodi.
+                     </p>
+                  </div>
+                  <div class="feature-box">
+                     <i class="fa-regular fa-heart feature-box__icon"></i>
+                     <h3 class="tertiary-heading">Live a healthier life</h3>
+                     <p class="feature-box__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nulla voluptatum quas nam. Veniam temporibus autem ea
+                        inventore.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End Features Section -->
+
+         <!-- Tours Section -->
+         <section class="tours-section slice" id="section-tours">
+            <div class="container">
+               <h2 class="secondary-heading">Pricing</h2>
+               <div class="tours-section_con">
+                  <!-- tour card 1  -->
+                  <div class="tour-card">
+                     <!-- Front Side -->
+                     <div class="tour-card__side tour-card__side--front">
+                        <div class="tour-card__header">
+                           <div
+                              class="tour-card__picture tour-card__picture--1">
+                              &nbsp;
+                           </div>
+                           <h4 class="tour-card__heading tour-card__heading--1">
+                              The Sea Explorer
+                           </h4>
+                        </div>
+                        <ul role="list" class="tour-card__list">
+                           <li class="tour-card__list-item">3 day tours</li>
+                           <li class="tour-card__list-item">Up to 30 people</li>
+                           <li class="tour-card__list-item">2 tour guides</li>
+                           <li class="tour-card__list-item">
+                              Sleep in cozy hotels
+                           </li>
+                           <li class="tour-card__list-item">
+                              Difficulty: easy
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- Back Side -->
+                     <div
+                        class="tour-card__side tour-card__side--back tour-card__side--back-1">
+                        <div class="tour-card__cta-box">
+                           <p class="tour-card__price-only">Only</p>
+                           <p class="tour-card__price-value">$297</p>
+                           <a href="#popup" class="btn btn--white">Book now!</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- tour card 2 -->
+                  <div class="tour-card">
+                     <!-- Front Side -->
+                     <div class="tour-card__side tour-card__side--front">
+                        <div class="tour-card__header">
+                           <div
+                              class="tour-card__picture tour-card__picture--2">
+                              &nbsp;
+                           </div>
+                           <h4 class="tour-card__heading tour-card__heading--2">
+                              The Forest Hiker
+                           </h4>
+                        </div>
+                        <ul role="list" class="tour-card__list">
+                           <li class="tour-card__list-item">7 day tours</li>
+                           <li class="tour-card__list-item">Up to 40 people</li>
+                           <li class="tour-card__list-item">6 tour guides</li>
+                           <li class="tour-card__list-item">
+                              Sleep in provided tents
+                           </li>
+                           <li class="tour-card__list-item">
+                              Difficulty: medium
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- Back Side -->
+                     <div
+                        class="tour-card__side tour-card__side--back tour-card__side--back-2">
+                        <div class="tour-card__cta-box">
+                           <p class="tour-card__price-only">Only</p>
+                           <p class="tour-card__price-value">$497</p>
+                           <a href="#popup" class="btn btn--white">Book now!</a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- tour card 3 -->
+                  <div class="tour-card">
+                     <!-- Front Side -->
+                     <div class="tour-card__side tour-card__side--front">
+                        <div class="tour-card__header">
+                           <div
+                              class="tour-card__picture tour-card__picture--3">
+                              &nbsp;
+                           </div>
+                           <h4 class="tour-card__heading tour-card__heading--3">
+                              The Snow Adventurer
+                           </h4>
+                        </div>
+                        <ul role="list" class="tour-card__list">
+                           <li class="tour-card__list-item">5 day tours</li>
+                           <li class="tour-card__list-item">Up to 15 people</li>
+                           <li class="tour-card__list-item">3 tour guides</li>
+                           <li class="tour-card__list-item">
+                              Sleep in provided tents
+                           </li>
+                           <li class="tour-card__list-item">
+                              Difficulty: hard
+                           </li>
+                        </ul>
+                     </div>
+                     <!-- Back Side  -->
+                     <div
+                        class="tour-card__side tour-card__side--back tour-card__side--back-3">
+                        <div class="tour-card__cta-box">
+                           <p class="tour-card__price-only">Only</p>
+                           <p class="tour-card__price-value">$897</p>
+                           <a href="#popup" class="btn btn--white">Book now!</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End Tours Section -->
+
+         <!-- Stories Section -->
+         <section class="stories-section slice">
+            <div class="bg-video">
+               <video class="bg-video__content" autoplay muted loop>
+                  <source
+                     src="https://media.istockphoto.com/id/864526000/video/aerial-calm-surface-of-a-lake-in-the-forest-reflecting-the-beautiful-mount-hood-in-the.mp4?s=mp4-640x640-is&k=20&c=FEo1YeJ6ysV5vz62TCXehtl9Di8o0p0nWHPPXbdepFo="
+                     type="video/mp4" />
+                  <!-- <source src="img/video.webm" type="video/webm" /> -->
+                  Your browser is not supported!
+               </video>
+            </div>
+            <div class="container">
+               <h2 class="secondary-heading">We make people genuinely happy</h2>
+               <div class="stories-section__con">
+                  <div class="story">
+                     <figure class="story__shape">
+                        <img
+                           src="https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fde3b7029-039e-4b43-8970-8c6b4d1e0e9d%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4Q4QX5MCU2%252F20241110%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20241110T104100Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D5c0dcd7259ccbb86c725976b83ab139a750ac659c0d93ccc28f5b134d38c7978&sign=w8Gvx_u6xX3c2MWer5eRFDOjuF0He5Eh7JCb4f8uvYY"
+                           alt="Person on a tour"
+                           class="story__img" />
+                        <figcaption class="story__caption">
+                           Jack Wilson
+                        </figcaption>
+                     </figure>
+                     <div class="story__text">
+                        <h3 class="tertiary-heading u-margin-bottom-small">
+                           I had the best week ever with my family
+                        </h3>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Aperiam, ipsum sapiente aspernatur libero
+                           repellat quis consequatur ducimus quam nisi
+                           exercitationem omnis earum qui. Aperiam, ipsum
+                           sapiente aspernatur libero repellat quis consequatur
+                           ducimus quam nisi.
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="story">
+                     <figure class="story__shape">
+                        <img
+                           src="https://images.unsplash.com/photo-1623800417590-f522665790a4?q=80&w=1315&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                           alt="Person on a tour"
+                           class="story__img" />
+                        <figcaption class="story__caption">
+                           Jack Wilson
+                        </figcaption>
+                     </figure>
+                     <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                           WOW! My life is completely different now
+                        </h3>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Aperiam, ipsum sapiente aspernatur libero
+                           repellat quis consequatur ducimus quam nisi
+                           exercitationem omnis earum qui. Aperiam, ipsum
+                           sapiente aspernatur libero repellat quis consequatur
+                           ducimus quam nisi exercitationem omnis earum qui.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="text-center margin-top-huge">
+                  <a href="javascript:;" class="btn-text">
+                     Read all stories &rarr;
+                  </a>
+               </div>
+            </div>
+         </section>
+      </main>
+   </body>
+</html>
