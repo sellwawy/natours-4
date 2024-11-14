@@ -1,23 +1,10 @@
 .tours-section {
    background-color: hsl(var(--color-gray-blue));
    &_con {
-      // width: 30em;
-
-      overflow-x: auto;
-      white-space: nowrap;
-
-      // overflow-x: auto;
-      display: grid;
-      grid-auto-flow: column;
+      display: flex;
+      // flex-direction: column;
+      flex-wrap: wrap;
       justify-content: space-around;
-      padding: 0 44px 44px 44px;
-      // grid-auto-columns: 30%;
-      // overflow-x: auto;
-      // overscroll-behavior-inline: contain;
-      // padding-inline: rem(29px);
-      // // flex-wrap: wrap;
-      // justify-content: center;
-      // // grid-template-columns: repeat(auto-fill, minmax(rem(350px), 1fr));
       gap: 30px;
    }
 }

@@ -1,0 +1,12 @@
+.book-section {
+   padding: 15rem 0;
+   background-image: linear-gradient(
+      to right bottom,
+      hsl(var(--color-primary-light)),
+      hsl(var(--color-primary-dark))
+   );
+
+   // @include respond(tab-port) {
+   //    padding: 10rem 0;
+   // }
+}

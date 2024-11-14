@@ -1,10 +1,19 @@
+@use '../../abstracts/' as *;
+
 .about-section {
-   // padding-block: rem(250px);
-   // margin-top: -20vh;
+   @include breakpoint-down(lg) {
+      min-height: 53rem;
+   }
 
    &__con {
       display: flex;
+
       gap: 40px;
+      grid-template-columns: 1fr;
+
+      @include breakpoint-down(lg) {
+         flex-direction: column;
+      }
    }
 }
 
@@ -14,7 +23,7 @@
 
    &__photo {
       width: 55%;
-      box-shadow: 0 15px 4px hsl(var(--color-black / 0.4));
+      box-shadow: 0 15px 4px hsl(var(--color-black) / 0.4);
       border-radius: 2px;
       position: absolute;
       //      z-index: 10;

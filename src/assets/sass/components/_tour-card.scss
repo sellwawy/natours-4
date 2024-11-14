@@ -5,9 +5,10 @@
    position: relative;
    height: 607px;
    width: 100%;
-   max-width: 350px;
-   min-width: 330px;
-
+   max-width: 530px;
+   min-width: 260px;
+   flex-basis: 30%;
+   flex-grow: 1;
    &__side {
       height: 607px;
       transition: transform 0.8s ease;

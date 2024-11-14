@@ -26,6 +26,8 @@
    // FONT
    $default-font-size: 1.6rem;
 
+   --fluid-25-60: clamp(1.5625rem, 0.767rem + 3.9773vw, 3.75rem);
+
    // GRID
    $grid-width: 114rem;
    $gutter-vertical: 8rem;

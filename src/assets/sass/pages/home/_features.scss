@@ -1,3 +1,5 @@
+@use '../../abstracts/' as *;
+
 .features-section {
    background-image: linear-gradient(
          to right bottom,
@@ -9,8 +11,11 @@
 
    &__con {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
       gap: 20px;
+
+      @include breakpoint-up(md) {
+         grid-template-columns: 1fr 1fr;
+      }
    }
 }
 

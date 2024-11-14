@@ -9,15 +9,16 @@ body {
    --color-opacity: 1;
    text-transform: uppercase;
    color: hsl(var(--color-white));
+   font-size: var(--fluid-25-60);
    font-weight: 500;
    // backface-visibility: hidden;
    margin-bottom: 3.75rem;
 
    &__main {
       display: block;
-      font-size: 3.75rem;
-      letter-spacing: 2rem;
+      letter-spacing: 10px;
       animation: moveInLeft 1s ease-out;
+      margin-bottom: 10px;
 
       /*
    animation-name: moveInLeft;
@@ -29,7 +30,7 @@ body {
    &__sub {
       display: block;
       font-size: 20px;
-      letter-spacing: 16px;
+      letter-spacing: 10px;
       animation: moveInRight 1s ease-out;
    }
 }

@@ -1,4 +1,29 @@
-body {
+:root {
    // padding: 2.5vw;
    // overflow-x: hidden;
+
+   ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+   }
+
+   ::-webkit-scrollbar-track {
+      background: hsl(0, 0%, 78%);
+   }
+
+   ::-webkit-scrollbar-thumb {
+      background: hsl(0, 0%, 49%);
+      border-radius: 4px;
+   }
+
+   ::-webkit-scrollbar-thumb:hover {
+      background: hsl(0, 0%, 31%);
+   }
+
+   // @supports (scrollbar-color: red blue) {
+   //    * {
+   //       scrollbar-color: hsl(0, 0%, 49%) hsl(0, 0%, 78%);
+   //       scrollbar-width: auto;
+   //    }
+   // }
 }

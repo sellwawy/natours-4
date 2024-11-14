@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 .story {
    width: 75%;
    margin: 0 auto;
@@ -21,7 +23,8 @@
    &__shape {
       width: 150px;
       height: 150px;
-      float: left;
+      margin-inline: auto;
+      margin-bottom: 22px;
       transform: translateX(-20px);
       position: relative;
       overflow: hidden;
@@ -33,6 +36,9 @@
          border-radius: none;
       }
 
+      @include breakpoint-up(md) {
+         float: left;
+      }
       //   @include respond(phone) {
       //      transform: translateX(-3rem) skewX(0);
       //   }
