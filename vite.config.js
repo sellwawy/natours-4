@@ -30,9 +30,9 @@ export default {
       },
       postcss: {
          plugins: [
-            postCssPxToRem({
-               propList: ['*'],
-            }),
+            // postCssPxToRem({
+            //    propList: ['*'],
+            // }),
             autoprefixer,
          ],
       },

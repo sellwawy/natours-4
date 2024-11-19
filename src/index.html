@@ -364,7 +364,7 @@
                         </figcaption>
                      </figure>
                      <div class="story__text">
-                        <h3 class="heading-tertiary u-margin-bottom-small">
+                        <h3 class="tertiary-heading u-margin-bottom-small">
                            WOW! My life is completely different now
                         </h3>
                         <p>
@@ -388,63 +388,63 @@
          <!-- End Stories Section -->
 
          <!-- Book Section -->
-         <section class="book-section">
+         <section class="book-section slice">
             <div class="container text-center-">
                <div class="book">
-                  <div class="book__form">
-                     <form action="#" class="form">
-                        <h2 class="heading-secondary">Start booking now</h2>
-                        <div class="form__group">
+                  <div class="book__form-con">
+                     <form action="javascript:;" class="book-form">
+                        <h2 class="secondary-heading">Start booking now</h2>
+                        <div class="book-form__group">
                            <input
                               type="text"
-                              class="form__input"
+                              class="book-form__input"
                               placeholder="Full name"
                               id="name"
                               required />
-                           <label for="name" class="form__label">
+                           <label for="name" class="book-form__label">
                               Full name
                            </label>
                         </div>
 
-                        <div class="form__group">
+                        <div class="book-form__group">
                            <input
                               type="email"
-                              class="form__input"
+                              class="book-form__input"
                               placeholder="Email address"
                               id="email"
                               required />
-                           <label for="email" class="form__label">
+                           <label for="email" class="book-form__label">
                               Email address
                            </label>
                         </div>
 
-                        <div class="form__group">
-                           <div class="form__radio-group">
+                        <div class="book-form__radio-con">
+                           <div class="book-form__radio-group">
                               <input
                                  type="radio"
-                                 class="form__radio-input"
+                                 class="book-form__radio-input"
                                  id="small"
                                  name="size" />
-                              <label for="small" class="form__radio-label">
-                                 <span class="form__radio-button"></span>
+                              <label for="small" class="book-form__radio-label">
+                                 <span class="book-form__radio-button"></span>
                                  Small tour group
                               </label>
                            </div>
 
-                           <div class="form__radio-group">
+                           <div class="book-form__radio-group">
                               <input
                                  type="radio"
-                                 class="form__radio-input"
+                                 class="book-form__radio-input"
                                  id="large"
                                  name="size" />
-                              <label for="large" class="form__radio-label">
-                                 <span class="form__radio-button"></span>
+                              <label for="large" class="book-form__radio-label">
+                                 <span class="book-form__radio-button"></span>
                                  Large tour group
                               </label>
                            </div>
                         </div>
 
-                        <div class="form__group">
+                        <div class="book-form__group">
                            <button class="btn btn--green">
                               Next step &rarr;
                            </button>
@@ -456,5 +456,65 @@
          </section>
          <!-- End Book Section -->
       </main>
+
+      <footer class="site-footer">
+         <div class="container">
+            <div class="site-footer__logo-box text-center">
+               <picture class="site-footer__logo">
+                  <source
+                     srcset="
+                        img/logo-green-small-1x.png 1x,
+                        img/logo-green-small-2x.png 2x
+                     "
+                     media="(max-width: 37.5em)" />
+                  <img
+                     srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+                     alt="Full logo"
+                     src="img/logo-green-2x.png" />
+               </picture>
+            </div>
+            <div class="site-footer__con">
+               <div class="site-footer__navigation flex-1">
+                  <ul class="site-footer__list">
+                     <li class="site-footer__item">
+                        <a href="javascript:;" class="site-footer__link">
+                           Company
+                        </a>
+                     </li>
+                     <li class="site-footer__item">
+                        <a href="javascript:;" class="site-footer__link">
+                           Contact us
+                        </a>
+                     </li>
+                     <li class="site-footer__item">
+                        <a href="javascript:;" class="site-footer__link">
+                           Carrers
+                        </a>
+                     </li>
+                     <li class="site-footer__item">
+                        <a href="javascript:;" class="site-footer__link">
+                           Privacy policy
+                        </a>
+                     </li>
+                     <li class="site-footer__item">
+                        <a href="javascript:;" class="site-footer__link">
+                           Terms
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <p class="site-footer__copyright flex-1">
+                  Copyright &copy; by
+                  <a href="javascript:;" class="footer__link">
+                     Jonas Schmedtmann
+                  </a>
+                  . You are 100% allowed to use this webpage for both personal
+                  and commercial use, but NOT to claim it as your own design. A
+                  credit to the original author, Jonas Schmedtmann, is of course
+                  highly appreciated!
+               </p>
+            </div>
+         </div>
+      </footer>
    </body>
 </html>

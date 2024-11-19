@@ -1,14 +1,24 @@
+@use '../abstracts' as *;
+
 .book {
    background-image: linear-gradient(
-         105deg,
-         hsl(var(--color-white) / 0.9) 0%,
-         hsl(var(--color-white) / 0.9) 50%,
-         transparent 50%
+         hsl(var(--color-white) / 0.9),
+         hsl(var(--color-white) / 0.9)
       ),
       url(https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-   background-size: 100%;
+
+   background-size: cover;
    border-radius: 3px;
    box-shadow: 0 1.5rem 4rem hsl(var(--color-black) / 0.2);
+   @include breakpoint-up(lg) {
+      background-image: linear-gradient(
+            105deg,
+            hsl(var(--color-white) / 0.9) 0%,
+            hsl(var(--color-white) / 0.9) 50%,
+            transparent 50%
+         ),
+         url(https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   }
 
    // @include respond(tab-land) {
    //    background-image: linear-gradient(
@@ -30,13 +40,12 @@
    //       url(../img/nat-10.jpg);
    // }
 
-   &__form {
-      width: 50%;
+   &__form-con {
       padding: 60px;
 
-      // @include respond(tab-land) {
-      //    width: 65%;
-      // }
+      @include breakpoint-up(lg) {
+         width: 50%;
+      }
 
       // @include respond(tab-port) {
       //    width: 100%;
@@ -44,7 +53,7 @@
    }
 }
 
-.form {
+.book-form {
    display: flex;
    flex-direction: column;
    gap: 22px;
@@ -85,8 +94,9 @@
       //   font-size: 12px;
       //   font-weight: 700;
       margin-left: 20px;
-      margin-top: 0.7rem;
+      margin-bottom: 7px;
       display: block;
+      transform: translateY(-80px);
       transition: all 0.3s;
    }
 
@@ -96,10 +106,12 @@
       transform: translateY(-40px);
    }
 
+   &__radio-con {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+   }
    &__radio-group {
-      width: 49%;
-      display: inline-block;
-
       //  @include respond(tab-port) {
       //      width: 100%;
       //      margin-bottom: 2rem;
@@ -130,8 +142,8 @@
       &::after {
          content: '';
          display: block;
-         height: 1.3rem;
-         width: 1.3rem;
+         height: 13px;
+         width: 13px;
          border-radius: 50%;
          position: absolute;
          top: 50%;
