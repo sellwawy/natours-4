@@ -1,13 +1,12 @@
 @use '../abstracts/' as *;
 
 .story {
-   width: 75%;
+   max-width: 66ch;
    margin: 0 auto;
    box-shadow: 0px 1px 4px hsl(var(--color-black) / 0.2);
    background-color: hsl(var(--color-white) / 0.6);
    border-radius: 5px;
-   padding: 60px;
-   padding-left: 80px;
+   padding: var(--fluid-30-60);
    // transform: skewX(-12deg);
 
    // @include respond(tab-port) {

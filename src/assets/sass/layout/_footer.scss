@@ -3,7 +3,6 @@
 .site-footer {
    background-color: hsl(var(--color-grey-dark-3));
    padding: 10rem 0;
-   font-size: 1.4rem;
    color: hsl(var(--color-grey-light-1));
 
    // @include respond(tab-port) {
@@ -80,7 +79,7 @@
 
       border-top: 1px solid hsl(var(--color-grey-dark));
       padding-top: 20px;
-      width: 80%;
+      // width: 80%;
       float: right;
 
       // @include respond(tab-port) {

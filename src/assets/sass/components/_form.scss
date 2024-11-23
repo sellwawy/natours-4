@@ -41,7 +41,7 @@
    // }
 
    &__form-con {
-      padding: 60px;
+      padding: var(--fluid-30-60);
 
       @include breakpoint-up(lg) {
          width: 50%;

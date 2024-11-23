@@ -1,11 +1,10 @@
 .container {
    // width: 85vw;
    // margin-inline: auto;
-   width: clamp(300px, 90vw, 1200px);
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: 1.5rem;
-   padding-right: 1.5rem;
+   width: clamp(1px, 90vw, 1200px);
+   margin-inline: auto;
+   padding-left: 1rem;
+   padding-inline: 1rem;
    position: relative;
 }
 .slice {
