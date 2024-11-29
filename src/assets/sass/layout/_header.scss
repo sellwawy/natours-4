@@ -45,6 +45,7 @@
    color: hsl(var(--color-primary));
    background-color: hsl(var(--color-white) / 0.9);
    padding: 3px;
+   animation: fade-in-from-top 0.5s;
 }
 
 /* STYLES */

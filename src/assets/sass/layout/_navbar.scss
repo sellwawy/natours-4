@@ -6,6 +6,7 @@
    display: flex;
    gap: 33px;
    color: white;
+   animation: fade-in-from-top 0.5s;
 
    &__li {
       // color: aliceblue;
@@ -19,6 +20,7 @@
 
 .site-nav-toggle {
    display: none;
+   animation: fade-in-from-top 0.5s;
 }
 
 @media (max-width: 49em) {
@@ -26,7 +28,11 @@
       position: fixed;
       // z-index: 1000;
       inset: 0 0 0 30%;
-      background-color: hsla(0, 0%, 0%, 0.9);
+      background-image: radial-gradient(
+         hsl(var(--color-primary-light)),
+         (hsl(var(--color-primary-light)))
+      );
+
       flex-direction: column;
       align-items: center;
       padding: min(30vh, 100px) 30px;
