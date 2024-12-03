@@ -32,6 +32,7 @@
    top: 40px;
    z-index: 9999;
    width: 100%;
+   animation: fade-in-from-top 0.5s;
 
    &__con {
       display: flex;
@@ -41,11 +42,7 @@
 }
 
 .site-logo {
-   height: 2.5rem;
-   color: hsl(var(--color-primary));
-   background-color: hsl(var(--color-white) / 0.9);
-   padding: 3px;
-   animation: fade-in-from-top 0.5s;
+   height: 40px;
 }
 
 /* STYLES */

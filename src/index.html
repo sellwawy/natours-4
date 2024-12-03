@@ -22,12 +22,12 @@
       <style>
          @font-face {
             font-family: 'Inter';
-            src: url('./assets/fonts/inter/Inter-VariableFont_slnt\,wght-subset.woff2')
-               format('woff2');
+            src: url('assets/fonts/inter.woff2') format('woff2');
             font-weight: 100 900;
             /* font-display: swap; */
          }
       </style>
+
       <script type="module" src="main.js"></script>
    </head>
 
@@ -36,16 +36,14 @@
       <header class="site-header">
          <div class="container site-header__con">
             <!-- Logo -->
-            <div class="site-logo">
-               <!-- <a href="/">
-                  <img
-                     class="site-logo__img"
-                     src="./assets/img/logo-white.png"
-                     alt="Site logo" />
-               </a> -->
-               <h1>Natours</h1>
-            </div>
+            <a href="/">
+               <img
+                  class="site-logo"
+                  src="./assets/images/logo-white.png"
+                  alt="Site logo" />
+            </a>
 
+            <!-- Navbar toggle button -->
             <button
                class="site-nav-toggle bars-icon"
                aria-controls="primary-navigation"
@@ -83,6 +81,7 @@
             </nav>
          </div>
       </header>
+      <!-- End Header  -->
 
       <main>
          <!-- Hero Section -->

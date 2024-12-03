@@ -1,12 +1,7 @@
-.site-nav-con {
-   position: relative;
-}
-
 .site-nav {
    display: flex;
    gap: 33px;
    color: white;
-   animation: fade-in-from-top 0.5s;
 
    &__li {
       // color: aliceblue;
@@ -20,7 +15,6 @@
 
 .site-nav-toggle {
    display: none;
-   animation: fade-in-from-top 0.5s;
 }
 
 @media (max-width: 49em) {
@@ -48,8 +42,7 @@
       display: inline-block;
       position: fixed;
       z-index: 9999;
-      right: 42px;
-      top: 42px;
+      right: 45px;
       width: 30px;
       aspect-ratio: 1;
       border: none;
@@ -58,12 +51,10 @@
 }
 
 .bars-icon {
-   background: url(/assets/icons/bars.svg);
+   background: url(/assets/images/bars.svg);
    background-repeat: no-repeat;
 }
 .xmark-icon {
-   background: url(/assets/icons/xmark.svg);
+   background: url(/assets/images/xmark.svg);
    background-repeat: no-repeat;
 }
-
-/* Mobile styling */
