@@ -60,22 +60,19 @@
                   data-visible="false"
                   aria-label="Main">
                   <li class="site-nav__li">
-                     <a href="#home" class="site-nav__a">Home</a>
-                  </li>
-                  <li class="site-nav__li">
                      <a href="#about" class="site-nav__a">About</a>
                   </li>
                   <li class="site-nav__li">
-                     <a href="#resume" class="site-nav__a">Resume</a>
+                     <a href="#features" class="site-nav__a">Features</a>
                   </li>
                   <li class="site-nav__li">
-                     <a href="#portfolio" class="site-nav__a">Portfolio</a>
+                     <a href="#tours" class="site-nav__a">Tours</a>
                   </li>
                   <li class="site-nav__li">
-                     <a href="#blog" class="site-nav__a">Blog</a>
+                     <a href="#stories" class="site-nav__a">Stories</a>
                   </li>
                   <li class="site-nav__li">
-                     <a href="#contact" class="site-nav__a">Contact</a>
+                     <a href="#book-now" class="site-nav__a">Book Now!</a>
                   </li>
                </ul>
             </nav>
@@ -101,7 +98,7 @@
          <!-- End Hero Section -->
 
          <!-- About Section -->
-         <section class="about-section slice">
+         <section id="about" class="about-section slice">
             <div class="container">
                <h2 class="secondary-heading">
                   Exciting tours for adventurous people
@@ -149,7 +146,7 @@
          <!-- End About Section -->
 
          <!-- Features Section -->
-         <section class="features-section slice">
+         <section id="features" class="features-section slice">
             <div class="container">
                <h2 class="secondary-heading secondary-heading--white">
                   Our features
@@ -197,7 +194,7 @@
          <!-- End Features Section -->
 
          <!-- Tours Section -->
-         <section class="tours-section slice" id="section-tours">
+         <section id="tours" class="tours-section slice" id="section-tours">
             <div class="container">
                <h2 class="secondary-heading">Pricing</h2>
                <div class="tours-section_con">
@@ -232,7 +229,9 @@
                         <div class="tour-card__cta-box">
                            <p class="tour-card__price-only">Only</p>
                            <p class="tour-card__price-value">$297</p>
-                           <a href="#popup" class="btn btn--white">Book now!</a>
+                           <a href="#book-popup" class="btn btn--white">
+                              Book now!
+                           </a>
                         </div>
                      </div>
                   </div>
@@ -268,7 +267,9 @@
                         <div class="tour-card__cta-box">
                            <p class="tour-card__price-only">Only</p>
                            <p class="tour-card__price-value">$497</p>
-                           <a href="#popup" class="btn btn--white">Book now!</a>
+                           <a href="#book-popup" class="btn btn--white">
+                              Book now!
+                           </a>
                         </div>
                      </div>
                   </div>
@@ -304,7 +305,9 @@
                         <div class="tour-card__cta-box">
                            <p class="tour-card__price-only">Only</p>
                            <p class="tour-card__price-value">$897</p>
-                           <a href="#popup" class="btn btn--white">Book now!</a>
+                           <a href="#book-popup" class="btn btn--white">
+                              Book now!
+                           </a>
                         </div>
                      </div>
                   </div>
@@ -313,8 +316,47 @@
          </section>
          <!-- End Tours Section -->
 
+         <!-- Book Popup -->
+         <div class="book-popup" id="book-popup">
+            <div class="book-popup__content">
+               <div class="book-popup__left">
+                  <img
+                     src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     alt="Tour photo"
+                     class="book-popup__img" />
+                  <img
+                     src="https://images.unsplash.com/photo-1501696088263-5696c92364bf?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     alt="Tour photo"
+                     class="book-popup__img" />
+               </div>
+               <div class="book-popup__right">
+                  <a href="#section-tours" class="book-popup__close">&times;</a>
+                  <h2 class="secondary-heading u-margin-bottom-small">
+                     Start booking now
+                  </h2>
+                  <h3 class="tertiary-heading u-margin-bottom-small">
+                     Important &ndash; Please read these terms before booking
+                  </h3>
+                  <p class="book-popup__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut labore et dolore magna
+                     aliqua. Sed sed risus pretium quam. Aliquam sem et tortor
+                     consequat id. Volutpat odio facilisis mauris sit amet massa
+                     vitae. Mi bibendum neque egestas congue. Placerat orci
+                     nulla pellentesque dignissim enim sit. Vitae semper quis
+                     lectus nulla at volutpat diam ut venenatis. Malesuada
+                     pellentesque elit eget gravida cum sociis natoque penatibus
+                     et. Proin fermentum leo vel orci porta non pulvinar neque
+                     laoreet.
+                  </p>
+                  <a href="#" class="btn btn--green">Book now</a>
+               </div>
+            </div>
+         </div>
+         <!-- End Book Popup -->
+
          <!-- Stories Section -->
-         <section class="stories-section slice">
+         <section id="stories" class="stories-section slice">
             <div class="bg-video">
                <video class="bg-video__content" autoplay muted loop>
                   <source
@@ -387,7 +429,7 @@
          <!-- End Stories Section -->
 
          <!-- Book Section -->
-         <section class="book-section slice">
+         <section id="book-now" class="book-section slice">
             <div class="container text-center-">
                <div class="book">
                   <div class="book__form-con">
@@ -456,6 +498,7 @@
          <!-- End Book Section -->
       </main>
 
+      <!-- Site Footer -->
       <footer class="site-footer">
          <div class="container">
             <div class="site-footer__logo-box text-center">
@@ -515,5 +558,6 @@
             </div>
          </div>
       </footer>
+      <!-- End Site Footer -->
    </body>
 </html>

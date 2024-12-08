@@ -1,7 +1,4 @@
-// /** @type {import('vite').UserConfig} */
 import { resolve } from 'path'
-// import { postcss } from './postcss.config.js'
-// import liveReload from 'vite-plugin-live-reload'
 import autoprefixer from 'autoprefixer'
 import postCssPxToRem from 'postcss-pxtorem'
 
@@ -30,12 +27,12 @@ export default {
       },
       postcss: {
          plugins: [
-            // postCssPxToRem({
-            //    propList: ['*'],
-            // }),
+            postCssPxToRem({
+               propList:
+                  process.env.NODE_ENV === 'development' ? ['!*'] : ['*'],
+            }),
             autoprefixer,
          ],
       },
    },
 }
-// css: { postcss },

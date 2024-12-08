@@ -1,76 +1,7 @@
-// @import 'abstracts/functions';
-// @import 'abstracts/mixins';
-// @import 'abstracts/variables';
-
 @use 'base' as *;
-// @import 'base/base';
-// @import 'base/typography';
-// @import 'base/animations';
-// @import 'base/utilities';
 
 @import 'components';
-// @import 'components/tour-card';
-// @import 'components/story';
 
 @import 'layout';
-// @import 'layout/navbar';
 
 @import 'pages/home';
-// @import 'pages/home/main';
-// @import 'pages/home/hero';
-// @import 'pages/home/about';
-// @import 'pages/home/features';
-// @import 'pages/home/tours';
-// @import 'pages/home/stories';
-
-.con {
-   position: relative;
-   background-color: antiquewhite;
-   height: 50rem;
-   // height: 22px;
-}
-
-.rectangle {
-   position: absolute;
-   top: -25px;
-   left: -25px;
-   width: 50px;
-   width: 300px;
-   aspect-ratio: 1;
-   background-color: blue;
-   border: 1px solid #fefe;
-   // margin: 40px;
-   transform: rotate(90deg);
-   animation: move-sun 10s;
-}
-
-@keyframes move-sun {
-   from {
-      transform: rotate(0deg);
-   }
-
-   to {
-      transform: rotate(-90deg);
-   }
-}
-
-.sun {
-   position: relative;
-   width: 400px;
-   height: 400px;
-   margin: 200px;
-   transform: rotate(90deg);
-   animation: move-sun 10s;
-}
-
-.sun::before {
-   content: '';
-   position: absolute;
-   top: -25px;
-   left: -25px;
-   width: 50px;
-   height: 50px;
-   background-color: #ff0;
-   border-radius: 50%;
-   //
-}
